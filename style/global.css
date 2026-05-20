@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --verde-principal: #183A2D;
+    --verde-claro: #81C784;
+    --marrom: #6D4C41;
+    --bege: #DCC5B2;
+    --amarelo: #FBC02D;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    text-indent: 7px;
+}
+
+p {
+    text-align: justify;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.container-barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--verde-principal);
+    width: 100vw;
+    height: 6vh; 
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-barra {
+    background-color: var(--verde-claro);
+    height: 4vh;
+    width: 10vw;
+    border-radius: 2px;
+}
+
+.botao-menu {
+    background-image: url("../images/botao-menu.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:target {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bege);
+    width: 40vw;
+    height: 100vh;
+}    
+
+.sair {
+    display: block;
+    background-image: url("../images/botao-x.png");
+    background-size: cover;
+    background-position: center;
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    right: 0;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#menu li > a {
+    transition: 0.5s;
+    width: 40vw;
+    height: 7vh;
+}
+
+.link-cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.link-cadastro a {
+    width: 15vw;
+}
+
+@media (hover: hover) {
+    #menu li a:hover {
+        transform: scale(1.3);
+    }
+}
+
+.nome-logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+}
+
+footer {
+    background-color: var(--verde-principal);
+    color: white;
+    padding-top: 10px;
+    width: 100vw;
+}
+
+footer h2 {
+    width: 20vw;
+    display: inline;
+}
+
+footer img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+    display: inline;
+}
+
+footer ul {
+    columns: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    justify-content: start;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+}

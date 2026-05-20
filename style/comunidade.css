@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+article img {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 3vw;
+}
