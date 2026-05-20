@@ -16,7 +16,6 @@
                     <a href="#" class="sair"></a>
                     <nav>       
                         <ul>
-                            <li><a href="index.html" target="_blank">Home</a></li>
                             <li><a href="sobre.html" target="_blank">Sobre</a></li>
                             <li><a href="produtor.html" target="_blank">Produtores</a></li>
                             <li><a href="delivery.html" target="_blank">Delivery</a></li>
@@ -32,31 +31,63 @@
        </header>
        <main>
            <section id="hero">
-               <h1>Faça parte da HortHome</h1>
-               <p>Escolha como deseja participar da plataforma.</p>
-           </section>  
-           <section>
-               <div>
-                   <h2>Consumidor</h2>
-                   <p>Encontre produtos frescos de produtores locais.</p>
-                   <a href="#">Continuar</a>
-               </div>
-               <div>
-                   <h2>Produtor</h2>
-                   <p>Divulgue seus produtos e conecte-se com consumidores.</p>
-                   <a href="#">Continuar</a>
-               </div>
+               <h1>Cadastro do consumidor</h1> 
+               <p>Crie sua conta para acessar produtores e produtos disponíveis na plataforma.</p>
            </section>
            <section>
-               <h2>Já tem uma conta?</h2>
                <form>
+                   <legend>Informações da conta:</legend>
+                   <fieldset>
+                       <legend>Informações pessoais:</legend>
+                       <label for="nome">Nome: <input type="text" id="nome"></label>
+                       <label for="email">Email: <input type="email" id="email"></label>
+                       <label for="telefone">Telefone: <input type="tel" id="telefone"></label>
+                   </fieldset>
+                   <fieldset>
+                       <legend>Endereço:</legend>
+                       <select>
+                           <option value="" selected disabled>Marque o seu Estado</option>
+                           <option value="acre">Acre</option>
+                           <option value="alagoas">Alagoas</option>
+                           <option value="amapa">Amapá</option>
+                           <option value="amazonas">Amazonas</option>
+                           <option value="bahia">Bahia</option>
+                           <option value="ceara">Ceará</option>
+                           <option value="espirito-santo">Espírito Santo</option>
+                           <option value="goias">Goiás</option>
+                           <option value="maranhao">Maranhão</option>
+                           <option value="mato-grosso">Mato Grosso</option>
+                           <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
+                           <option value="minas-gerais">Minas Gerais</option>
+                           <option value="para">Pará</option>
+                           <option value="paraiba">Paraíba</option>
+                           <option value="parana">Paraná</option>
+                           <option value="pernambuco">Pernambuco</option>
+                           <option value="piaui">Piauí</option>
+                           <option value="rio-de-janeiro">Rio de Janeiro</option>
+                           <option value="rio-grande-do-norte">Rio Grande do Norte</option>
+                           <option value="rio-grande-do-sul">Rio Grande do Sul</option>
+                           <option value="rondonia">Rondônia</option>
+                           <option value="Roraina">Roraima</option>
+                           <option value="santa-catarina">Santa Catarina</option>
+                           <option value="sao-paulo">São Paulo</option>
+                           <option value="sergipe">Sergipe</option>
+                           <option value="tocantins">Tocantins</option>
+                           <option value="distrito-federal">Distrito federal</option>
+                       </select>
+                       <label for="cidade">Cidade: <input type="text" id="cidade"></label>
+                       <label for="rua">Rua: <input type="text" id="rua"></label>
+                       <label for="cep">CEP: <input type="text" id="cep"></label>
+                       <label for="numero">Número: <input type="text" id="numero"></label>
+                   </fieldset>
                    <fieldset>
                        <legend>Conta: </legend>
                        <label for="nome-de-usuario">Nome de usuário: <input type="text" id="nome-de-usuario"></label>
-                       <label for="senha">Senha: <input type="text" id="senha"></label>
-                       <label for="confirmacao">Confirme a senha:<input type="text" id="confirmacao"></label>
+                       <label for="senha">Senha: <input type="password" id="senha"></label>
+                       <label for="confirmacao">Confirme a senha:<input type="password" id="confirmacao"></label>
                    </fieldset>
                </form>
+               <p>Já tem uma conta? <a href="cadastro.html">Clique aqui</a></p>
            </section>
        </main>
        <footer>
@@ -67,7 +98,7 @@
           <nav>       
               <ul>
                   <li><a href="sobre.html" target="_blank">Sobre</a></li>
-                  <li><a href="produtor.html" target="_blank">Produtores</a></li>
+                  <li><a href="produtores.html" target="_blank">Produtores</a></li>
                   <li><a href="delivery.html" target="_blank">Delivery</a></li>
                   <li><a href="comunidade.html" target="_blank">Comunidade</a></li>
                   <li><a href="contato.html" target="_blank">Contato</a></li>
@@ -85,5 +116,6 @@
           </div>
           <p>© 2026 Hort Home. Todos os direitos reservados.</p>
       </footer>
+      <script src="./script/index.js"></script>
     </body>
 </html>
