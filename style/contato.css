@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+:root {
+    --verde-principal: #183A2D;
+    --verde-claro: #81C784;
+    --marrom: #6D4C41;
+    --bege: #DCC5B2;
+    --amarelo: #FBC02D;
+}
+
+main {
+    background-color: #f4f6f1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 35px 0px 60px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hero {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    background:
+    linear-gradient(
+    135deg,
+    var(--verde-principal),
+    #285943
+    );
+    border-radius: 28px;
+    padding: 50px;
+    overflow: hidden;
+    color: white;
+    box-shadow:
+    0px 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.hero-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 3rem;
+}
+
+.hero-texto p {
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+
+.hero-imagem {
+    min-height: 300px;
+    border-radius: 22px;
+    background:
+    linear-gradient(
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.08)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-section {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contato-info {
+    background-color: white;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow:
+    0px 5px 16px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contato-info h2 {
+    color: var(--verde-principal);
+    font-size: 2rem;
+}
+
+.contato-info p {
+    color: #444;
+}
+
+.info-card {
+    background-color: #f6f7f2;
+    border-left: 5px solid var(--verde-claro);
+    padding: 18px;
+    border-radius: 14px;
+}
+
+.info-card h3 {
+    color: var(--verde-principal);
+    margin-bottom: 10px;
+}
+
+.formulario-container {
+    background-color: white;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow:
+    0px 5px 16px rgba(0, 0, 0, 0.08);
+}
+
+.formulario-container h2 {
+    color: var(--verde-principal);
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: bold;
+    color: var(--marrom);
+}
+
+.campo-form input,
+.campo-form textarea {
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.campo-form textarea {
+    min-height: 180px;
+}
+
+.campo-form input:focus,
+.campo-form textarea:focus {
+    border-color: var(--verde-claro);
+    box-shadow:
+    0px 0px 8px rgba(129, 199, 132, 0.35);
+}
+
+.form-contato button {
+    width: 180px;
+    border: none;
+    background-color: var(--verde-principal);
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+
+    #hero {
+        flex-direction: column;
+        padding: 35px 25px;
+    }
+
+    .hero-texto h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-imagem {
+        width: 100%;
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contato-info,
+    .formulario-container {
+        padding: 24px;
+    }
+
+    .contato-info h2,
+    .formulario-container h2 {
+        font-size: 1.7rem;
+    }
+
+}

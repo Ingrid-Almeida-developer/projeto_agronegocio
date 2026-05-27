@@ -4,16 +4,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HortHome</title>
+
         <link rel="stylesheet" href="style/global.css">
         <link rel="stylesheet" href="style/cadastro_consumidor.css">
+
         <link rel="shortcut icon" href="images/logo_agronegocio.png" type="image/png">
     </head>
+
     <body>
+
         <header>
+
             <div class="container-barra">
+
                 <a href="#menu" class="link-barra botao-menu"></a>
+
                 <div id="menu">
+
                     <a href="#" class="sair"></a>
+
                     <nav>       
                         <ul>
                             <li><a href="sobre.html" target="_blank">Sobre</a></li>
@@ -23,30 +32,66 @@
                             <li><a href="contato.html" target="_blank">Contato</a></li>
                         </ul>
                     </nav>
+
                 </div>
+
                 <div class="link-cadastro">
                     <a href="cadastro.html" class="link-barra" target="_blank">Entrar</a>
                </div>
+
            </div>
+
        </header>
+
        <main>
+
            <section id="hero">
+
                <h1>Cadastro do consumidor</h1> 
-               <p>Crie sua conta para acessar produtores e produtos disponíveis na plataforma.</p>
+
+               <p>
+                   Crie sua conta para acessar produtores e produtos disponíveis na plataforma.
+               </p>
+
            </section>
-           <section>
-               <form>
+
+           <section class="cadastro-section">
+
+               <form class="form-cadastro">
+
                    <legend>Informações da conta:</legend>
-                   <fieldset>
+
+                   <fieldset class="grupo-form">
+
                        <legend>Informações pessoais:</legend>
-                       <label for="nome">Nome: <input type="text" id="nome"></label>
-                       <label for="email">Email: <input type="email" id="email"></label>
-                       <label for="telefone">Telefone: <input type="tel" id="telefone"></label>
+
+                       <label for="nome" class="campo-form">
+                           Nome:
+                           <input type="text" id="nome">
+                       </label>
+
+                       <label for="email" class="campo-form">
+                           Email:
+                           <input type="email" id="email">
+                       </label>
+
+                       <label for="telefone" class="campo-form">
+                           Telefone:
+                           <input type="tel" id="telefone">
+                       </label>
+
                    </fieldset>
-                   <fieldset>
+
+                   <fieldset class="grupo-form">
+
                        <legend>Endereço:</legend>
+
                        <select>
-                           <option value="" selected disabled>Marque o seu Estado</option>
+
+                           <option value="" selected disabled>
+                               Marque o seu Estado
+                           </option>
+
                            <option value="acre" name="estado">Acre</option>
                            <option value="alagoas" name="estado">Alagoas</option>
                            <option value="amapa" name="estado">Amapá</option>
@@ -73,29 +118,78 @@
                            <option value="sao-paulo" name="estado">São Paulo</option>
                            <option value="sergipe" name="estado">Sergipe</option>
                            <option value="tocantins" name="estado">Tocantins</option>
-                           <option value="distrito-federal" name="estado">Distrito federal</option>
+                           <option value="distrito-federal" name="estado">
+                               Distrito federal
+                           </option>
+
                        </select>
-                       <label for="cidade">Cidade: <input type="text" id="cidade"></label>
-                       <label for="rua">Rua: <input type="text" id="rua"></label>
-                       <label for="cep">CEP: <input type="text" id="cep"></label>
-                       <label for="numero">Número: <input type="text" id="numero"></label>
+
+                       <label for="cidade" class="campo-form">
+                           Cidade:
+                           <input type="text" id="cidade">
+                       </label>
+
+                       <label for="rua" class="campo-form">
+                           Rua:
+                           <input type="text" id="rua">
+                       </label>
+
+                       <label for="cep" class="campo-form">
+                           CEP:
+                           <input type="text" id="cep">
+                       </label>
+
+                       <label for="numero" class="campo-form">
+                           Número:
+                           <input type="text" id="numero">
+                       </label>
+
                    </fieldset>
-                   <fieldset>
-                       <legend>Conta: </legend>
-                       <label for="nome-de-usuario">Nome de usuário: <input type="text" id="nome-de-usuario"></label>
-                       <label for="senha">Senha: <input type="password" id="senha"></label>
-                       <label for="confirmacao">Confirme a senha:<input type="password" id="confirmacao"></label>
+
+                   <fieldset class="grupo-form">
+
+                       <legend>Conta:</legend>
+
+                       <label for="nome-de-usuario" class="campo-form">
+                           Nome de usuário:
+                           <input type="text" id="nome-de-usuario">
+                       </label>
+
+                       <label for="senha" class="campo-form">
+                           Senha:
+                           <input type="password" id="senha">
+                       </label>
+
+                       <label for="confirmacao" class="campo-form">
+                           Confirme a senha:
+                           <input type="password" id="confirmacao">
+                       </label>
+
                    </fieldset>
+
                </form>
-               <p>Já tem uma conta? <a href="cadastro.html">Clique aqui</a></p>
+
+               <p class="login-link">
+                   Já tem uma conta?
+                   <a href="cadastro.html">Clique aqui</a>
+               </p>
+
            </section>
+
        </main>
+
        <footer>
+
           <div class="nome-logo">
+
               <h2>HortHome</h2>
+
               <img src="images/logo_agronegocio.png" alt="Logo">
+
           </div>
+
           <nav>       
+
               <ul>
                   <li><a href="sobre.html" target="_blank">Sobre</a></li>
                   <li><a href="produtores.html" target="_blank">Produtores</a></li>
@@ -103,19 +197,50 @@
                   <li><a href="comunidade.html" target="_blank">Comunidade</a></li>
                   <li><a href="contato.html" target="_blank">Contato</a></li>
               </ul>
+
           </nav>
+
           <div>
+
               <h3>Nossas redes sociais</h3>
+
               <ul>
-                  <li><a href="https://github.com/Ingrid-Almeida-developer/projeto_agronegocio">Github - Ingrid</a></li> 
-                  <li><a href="https://github.com/guilhermearruda2812-cell">Github - Guilherme</a></li>     
-                  <li><a href="https://www.tiktok.com/@queen_of_grau?_r=1&_t=ZS-96SHUBdVRQu">TikTok - Ingrid</a></li> 
-                  <li><a href="https://www.tiktok.com/@guilherme_2010rru?_r=1&_t=ZS-96dTxHcnu9E">TikTok - Guilherme</a></li> 
-                  <li><a href="https://www.instagram.com/ingrid.silvalmeida?igsh=MW1ta2N2cnI3eDg0Mw==">Instagram - Ingrid</a></li>
+                  <li>
+                      <a href="https://github.com/Ingrid-Almeida-developer/projeto_agronegocio">
+                          Github - Ingrid
+                      </a>
+                  </li> 
+
+                  <li>
+                      <a href="https://github.com/guilhermearruda2812-cell">
+                          Github - Guilherme
+                      </a>
+                  </li>     
+
+                  <li>
+                      <a href="https://www.tiktok.com/@queen_of_grau?_r=1&_t=ZS-96SHUBdVRQu">
+                          TikTok - Ingrid
+                      </a>
+                  </li> 
+
+                  <li>
+                      <a href="https://www.tiktok.com/@guilherme_2010rru?_r=1&_t=ZS-96dTxHcnu9E">
+                          TikTok - Guilherme
+                      </a>
+                  </li> 
+
+                  <li>
+                      <a href="https://www.instagram.com/ingrid.silvalmeida?igsh=MW1ta2N2cnI3eDg0Mw==">
+                          Instagram - Ingrid
+                      </a>
+                  </li>
               </ul>
+
           </div>
+
           <p>© 2026 Hort Home. Todos os direitos reservados.</p>
+
       </footer>
-      <script src="./script/index.js"></script>
     </body>
+
 </html>

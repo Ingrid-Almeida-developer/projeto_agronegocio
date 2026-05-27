@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+:root {
+    --verde-principal: #183A2D;
+    --verde-claro: #81C784;
+    --marrom: #6D4C41;
+    --bege: #DCC5B2;
+    --amarelo: #FBC02D;
+}
+
+main {
+    background-color: #f7f7f2;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 40px 0px 50px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hero {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background:
+    linear-gradient(
+    135deg,
+    var(--verde-principal),
+    #285943
+    );
+    color: white;
+    border-radius: 24px;
+    padding: 60px 40px;
+    box-shadow:
+    0px 6px 18px rgba(0, 0, 0, 0.12);
+    position: relative;
+}
+
+#hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    position: relative;
+    z-index: 2;
+}
+
+.cadastro-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow:
+    0px 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-cadastro > legend {
+    color: var(--verde-principal);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.grupo-form {
+    border: 2px solid #dce8dc;
+    border-radius: 18px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.grupo-form legend {
+    color: var(--verde-principal);
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--marrom);
+    font-weight: bold;
+}
+
+.campo-form input,
+select {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.login-link {
+    margin-top: 25px;
+    text-align: center;
+    color: #444;
+}
+
+.login-link a {
+    color: var(--verde-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        gap: 25px;
+    }
+
+    #hero {
+        padding: 40px 25px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .cadastro-section {
+        padding: 22px;
+    }
+
+    .form-cadastro > legend {
+        font-size: 1.5rem;
+    }
+
+    .grupo-form {
+        padding: 20px;
+    }
+
+}

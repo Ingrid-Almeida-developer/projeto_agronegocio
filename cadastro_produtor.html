@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
+
         <meta charset="utf-8">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>HortHome</title>
+
         <link rel="stylesheet" href="style/global.css">
-        <link rel="stylesheet" href="style/cadastro_produtor.css">
+
+        <link rel="stylesheet" href="style/cadastro_produtores.css">
+
         <link rel="shortcut icon" href="images/logo_agronegocio.png" type="image/png">
+
     </head>
+
     <body>
+
         <header>
+
             <div class="container-barra">
+
                 <a href="#menu" class="link-barra botao-menu"></a>
+
                 <div id="menu">
+
                     <a href="#" class="sair"></a>
+
                     <nav>       
+
                         <ul>
                             <li><a href="sobre.html" target="_blank">Sobre</a></li>
                             <li><a href="produtores.html" target="_blank">Produtores</a></li>
@@ -22,31 +38,75 @@
                             <li><a href="comunidade.html" target="_blank">Comunidade</a></li>
                             <li><a href="contato.html" target="_blank">Contato</a></li>
                         </ul>
+
                     </nav>
+
                 </div>
+
                 <div class="link-cadastro">
-                    <a href="cadastro.html" class="link-barra" target="_blank">Entrar</a>
+
+                    <a href="cadastro.html" class="link-barra" target="_blank">
+                        Entrar
+                    </a>
+
                </div>
+
            </div>
+
        </header>
+
        <main>
+
            <section id="hero">
-               <h1>Cadastro do produtor</h1> 
-               <p>Faça parte da rede Horthome e desenvolva sua produção com apoio, capacitação e conexão com consumidores locais.</p>
+
+               <div class="hero-texto">
+
+                   <h1>Cadastro do produtor</h1> 
+
+                   <p>
+                       Faça parte da rede Horthome e desenvolva sua produção com apoio, capacitação e conexão com consumidores locais.
+                   </p>
+
+               </div>
            </section>
-           <section>
-               <form>
+
+           <section class="cadastro-section">
+
+               <form class="form-cadastro">
+
                    <legend>Informações:</legend>
-                   <fieldset>
+
+                   <fieldset class="grupo-form">
+
                        <legend>Informações pessoais:</legend>
-                       <label for="nome">Nome: <input type="text" id="nome"></label>
-                       <label for="email">Email: <input type="email" id="email"></label>
-                       <label for="telefone">Telefone: <input type="tel" id="telefone"></label>
+
+                       <label for="nome" class="campo-form">
+                           Nome:
+                           <input type="text" id="nome">
+                       </label>
+
+                       <label for="email" class="campo-form">
+                           Email:
+                           <input type="email" id="email">
+                       </label>
+
+                       <label for="telefone" class="campo-form">
+                           Telefone:
+                           <input type="tel" id="telefone">
+                       </label>
+
                    </fieldset>
-                   <fieldset>
+
+                   <fieldset class="grupo-form">
+
                        <legend>Endereço:</legend>
+
                        <select>
-                           <option value="" selected disabled>Marque o seu Estado</option>
+
+                           <option value="" selected disabled>
+                               Marque o seu Estado
+                           </option>
+
                            <option value="acre" name="estado">Acre</option>
                            <option value="alagoas" name="estado">Alagoas</option>
                            <option value="amapa" name="estado">Amapá</option>
@@ -57,58 +117,147 @@
                            <option value="goias" name="estado">Goiás</option>
                            <option value="maranhao" name="estado">Maranhão</option>
                            <option value="mato-grosso" name="estado">Mato Grosso</option>
-                           <option value="mato-grosso-do-sul" name="estado">Mato Grosso do Sul</option>
-                           <option value="minas-gerais" name="estado">Minas Gerais</option>
+                           <option value="mato-grosso-do-sul" name="estado">
+                               Mato Grosso do Sul
+                           </option>
+                           <option value="minas-gerais" name="estado">
+                               Minas Gerais
+                           </option>
                            <option value="para" name="estado">Pará</option>
                            <option value="paraiba" name="estado">Paraíba</option>
                            <option value="parana" name="estado">Paraná</option>
-                           <option value="pernambuco" name="estado">Pernambuco</option>
+                           <option value="pernambuco" name="estado">
+                               Pernambuco
+                           </option>
                            <option value="piaui" name="estado">Piauí</option>
-                           <option value="rio-de-janeiro" name="estado">Rio de Janeiro</option>
-                           <option value="rio-grande-do-norte" name="estado">Rio Grande do Norte</option>
-                           <option value="rio-grande-do-sul" name="estado">Rio Grande do Sul</option>
-                           <option value="rondonia" name="estado">Rondônia</option>
-                           <option value="Roraina" name="estado">Roraima</option>
-                           <option value="santa-catarina" name="estado">Santa Catarina</option>
-                           <option value="sao-paulo" name="estado">São Paulo</option>
-                           <option value="sergipe" name="estado">Sergipe</option>
-                           <option value="tocantins" name="estado">Tocantins</option>
-                           <option value="distrito-federal" name="estado">Distrito federal</option>
+                           <option value="rio-de-janeiro" name="estado">
+                               Rio de Janeiro
+                           </option>
+                           <option value="rio-grande-do-norte" name="estado">
+                               Rio Grande do Norte
+                           </option>
+                           <option value="rio-grande-do-sul" name="estado">
+                               Rio Grande do Sul
+                           </option>
+                           <option value="rondonia" name="estado">
+                               Rondônia
+                           </option>
+                           <option value="Roraina" name="estado">
+                               Roraima
+                           </option>
+                           <option value="santa-catarina" name="estado">
+                               Santa Catarina
+                           </option>
+                           <option value="sao-paulo" name="estado">
+                               São Paulo
+                           </option>
+                           <option value="sergipe" name="estado">
+                               Sergipe
+                           </option>
+                           <option value="tocantins" name="estado">
+                               Tocantins
+                           </option>
+                           <option value="distrito-federal" name="estado">
+                               Distrito federal
+                           </option>
+
                        </select>
-                       <label for="cidade">Cidade: <input type="text" id="cidade"></label>
-                       <label for="rua">Rua: <input type="text" id="rua"></label>
-                       <label for="cep">CEP: <input type="text" id="cep"></label>
-                       <label for="numero">Número: <input type="text" id="numero"></label>
+
+                       <label for="cidade" class="campo-form">
+                           Cidade:
+                           <input type="text" id="cidade">
+                       </label>
+
+                       <label for="rua" class="campo-form">
+                           Rua:
+                           <input type="text" id="rua">
+                       </label>
+
+                       <label for="cep" class="campo-form">
+                           CEP:
+                           <input type="text" id="cep">
+                       </label>
+
+                       <label for="numero" class="campo-form">
+                           Número:
+                           <input type="text" id="numero">
+                       </label>
+
                    </fieldset>
-                   <fieldset>
-                       <legend>Conta: </legend>
-                       <label for="nome-de-usuario">Nome de usuário: <input type="text" id="nome-de-usuario"></label>
-                       <label for="senha">Senha: <input type="password" id="senha"></label>
-                       <label for="confirmacao">Confirme a senha:<input type="password" id="confirmacao"></label>
-                   </fieldset>
-                   <fieldset>
-                       <legend>Te conhecendo um pouco melhor</legend>
-                       <label for="experiencia">Você já possui experiência com cultivo? <input type="text" id="experiencia"></label>
-                       <label for="espaco">Possui espaço para produção? <input type="text" id="espaco"></label>
-                       <label for="interesse">Qual tipo de cultivo desperta seu interesse? <input type="text" id="interesse"></label>
-                       <label for="parcerias">Pretende produzir individualmente ou em parceria? <input type="text" id="parcerias"></label>
-                   </fieldset>
-                   <fieldset>
+
+                   <fieldset class="grupo-form">
+
                        <legend>Conta:</legend>
-                       <label for="nome-de-usuario">Nome de usuário: <input type="text" id="nome-de-usuario"></label>
-                       <label for="senha">Senha: <input type="text" id="senha"></label>
-                       <label for="confirmacao">Confirme a senha:<input type="text" id="confirmacao"></label>
+
+                       <label for="nome-de-usuario" class="campo-form">
+                           Nome de usuário:
+                           <input type="text" id="nome-de-usuario">
+                       </label>
+
+                       <label for="senha" class="campo-form">
+                           Senha:
+                           <input type="password" id="senha">
+                       </label>
+
+                       <label for="confirmacao" class="campo-form">
+                           Confirme a senha:
+                           <input type="password" id="confirmacao">
+                       </label>
+
                    </fieldset>
+
+                   <fieldset class="grupo-form">
+
+                       <legend>Te conhecendo um pouco melhor</legend>
+
+                       <label for="experiencia" class="campo-form">
+                           Você já possui experiência com cultivo?
+                           <input type="text" id="experiencia">
+                       </label>
+
+                       <label for="espaco" class="campo-form">
+                           Possui espaço para produção?
+                           <input type="text" id="espaco">
+                       </label>
+
+                       <label for="interesse" class="campo-form">
+                           Qual tipo de cultivo desperta seu interesse?
+                           <input type="text" id="interesse">
+                       </label>
+
+                       <label for="parcerias" class="campo-form">
+                           Pretende produzir individualmente ou em parceria?
+                           <input type="text" id="parcerias">
+                       </label>
+
+                   </fieldset>
+
                </form>
-               <p>Já tem uma conta? <a href="cadastro.html">Clique aqui</a></p>
+
+               <p class="login-link">
+
+                   Já tem uma conta?
+
+                   <a href="cadastro.html">Clique aqui</a>
+
+               </p>
+
            </section>
+
        </main>
+
        <footer>
+
           <div class="nome-logo">
+
               <h2>HortHome</h2>
+
               <img src="images/logo_agronegocio.png" alt="Logo">
+
           </div>
+
           <nav>       
+
               <ul>
                   <li><a href="sobre.html" target="_blank">Sobre</a></li>
                   <li><a href="produtores.html" target="_blank">Produtores</a></li>
@@ -116,19 +265,55 @@
                   <li><a href="comunidade.html" target="_blank">Comunidade</a></li>
                   <li><a href="contato.html" target="_blank">Contato</a></li>
               </ul>
+
           </nav>
+
           <div>
+
               <h3>Nossas redes sociais</h3>
+
               <ul>
-                  <li><a href="https://github.com/Ingrid-Almeida-developer/projeto_agronegocio">Github - Ingrid</a></li> 
-                  <li><a href="https://github.com/guilhermearruda2812-cell">Github - Guilherme</a></li>     
-                  <li><a href="https://www.tiktok.com/@queen_of_grau?_r=1&_t=ZS-96SHUBdVRQu">TikTok - Ingrid</a></li> 
-                  <li><a href="https://www.tiktok.com/@guilherme_2010rru?_r=1&_t=ZS-96dTxHcnu9E">TikTok - Guilherme</a></li> 
-                  <li><a href="https://www.instagram.com/ingrid.silvalmeida?igsh=MW1ta2N2cnI3eDg0Mw==">Instagram - Ingrid</a></li>
+
+                  <li>
+                      <a href="https://github.com/Ingrid-Almeida-developer/projeto_agronegocio">
+                          Github - Ingrid
+                      </a>
+                  </li> 
+
+                  <li>
+                      <a href="https://github.com/guilhermearruda2812-cell">
+                          Github - Guilherme
+                      </a>
+                  </li>     
+
+                  <li>
+                      <a href="https://www.tiktok.com/@queen_of_grau?_r=1&_t=ZS-96SHUBdVRQu">
+                          TikTok - Ingrid
+                      </a>
+                  </li> 
+
+                  <li>
+                      <a href="https://www.tiktok.com/@guilherme_2010rru?_r=1&_t=ZS-96dTxHcnu9E">
+                          TikTok - Guilherme
+                      </a>
+                  </li> 
+
+                  <li>
+                      <a href="https://www.instagram.com/ingrid.silvalmeida?igsh=MW1ta2N2cnI3eDg0Mw==">
+                          Instagram - Ingrid
+                      </a>
+                  </li>
+
               </ul>
+
           </div>
+
           <p>© 2026 Hort Home. Todos os direitos reservados.</p>
+
       </footer>
+
       <script src="./script/index.js"></script>
+
     </body>
+
 </html>

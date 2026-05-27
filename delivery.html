@@ -3,27 +3,489 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Delivery</title>
+
         <link rel="stylesheet" href="style/global.css">
-        <link rel="shortcut icon" href="images/logo_agronegocio.png" type="image/png">
         <link rel="stylesheet" href="style/delivery.css">
+
+        <link rel="shortcut icon" href="images/logo_agronegocio.png" type="image/png">
     </head>
+
     <body>
+
         <header>
-            <h1>Compre aqui</h1>
-            <nav>
-                <ul>
-                    <li><a href="em_alta.html">Em alta</a></li>
-                    <li><a href=".html">Delivery</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                </ul>
-            </nav>
+
+            <div class="container-barra">
+
+                <a href="#menu" class="link-barra botao-menu"></a>
+
+                <div id="menu">
+
+                    <a href="#" class="sair"></a>
+
+                    <nav>
+                        <ul>
+                            <li><a href="sobre.html" target="_blank">Sobre</a></li>
+                            <li><a href="produtor.html" target="_blank">Produtores</a></li>
+                            <li><a href="delivery.html" target="_blank">Delivery</a></li>
+                            <li><a href="comunidade.html" target="_blank">Comunidade</a></li>
+                            <li><a href="contato.html" target="_blank">Contato</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div class="link-cadastro">
+                    <a href="cadastro.html" class="link-barra" target="_blank">
+                        Entrar
+                    </a>
+               </div>
+
+           </div>
+
         </header>
+
         <main>
 
+            <section id="hero">
+
+                <div class="hero-texto">
+
+                    <h1>Delivery HortHome</h1>
+
+                    <p>
+                        Encontre verduras, legumes e produtos frescos de produtores locais próximos de você.
+                    </p>
+
+                    <a href="#categorias" id="explorar-produtos">
+                        Explorar produtos
+                    </a>
+
+                </div>
+
+                <div class="hero-imagem">
+
+                    <img src="images/cesta-legumes.png" alt="Cesta de legumes">
+
+                </div>
+
+            </section>
+
+            <section id="pesquisa">
+
+                <h2>Buscar produtos</h2>
+
+                <form id="barra-pesquisa">
+
+                    <input 
+                        type="text"
+                        placeholder="Pesquise legumes, verduras ou produtores..."
+                    >
+
+                    <select>
+
+                        <option selected disabled>
+                            Categorias
+                        </option>
+
+                        <option>Verduras</option>
+                        <option>Legumes</option>
+                        <option>Frutas</option>
+                        <option>Orgânicos</option>
+
+                    </select>
+
+                    <button type="submit">
+                        Buscar
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section id="categorias">
+
+                <h2>Categorias populares</h2>
+
+                <div class="container-categorias">
+
+                    <a href="#verduras" class="card-categoria">
+
+                        <img src="images/verduras.jpg" alt="Verduras">
+
+                        <h3>Verduras</h3>
+
+                    </a>
+
+                    <a href="#legumes" class="card-categoria">
+
+                        <img src="images/legumes.jpg" alt="Legumes">
+
+                        <h3>Legumes</h3>
+
+                    </a>
+
+                    <a href="#frutas" class="card-categoria">
+
+                        <img src="images/frutas.jpg" alt="Frutas">
+
+                        <h3>Frutas</h3>
+
+                    </a>
+
+                    <a href="#organicos" class="card-categoria">
+
+                        <img src="images/organicos.jpg" alt="Orgânicos">
+
+                        <h3>Orgânicos</h3>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="sessao-produtos" id="verduras">
+
+                <div class="titulo-sessao">
+
+                    <h2>Verduras</h2>
+
+                    <a href="#">Ver mais</a>
+
+                </div>
+
+                <div class="container-produtos">
+
+                    <article class="card-produto">
+
+                        <img src="images/alface.jpg" alt="Alface">
+
+                        <div class="informacoes-produto">
+
+                            <h3>Alface</h3>
+
+                            <p>
+                                Produzido por agricultores locais.
+                            </p>
+
+                            <div class="preco-botao">
+
+                                <span>R$ 4,99</span>
+
+                                <button>
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="card-produto">
+
+                        <img src="images/rucula.jpg" alt="Rúcula">
+
+                        <div class="informacoes-produto">
+
+                            <h3>Rúcula</h3>
+
+                            <p>
+                                Produto fresco e selecionado.
+                            </p>
+
+                            <div class="preco-botao">
+
+                                <span>R$ 5,99</span>
+
+                                <button>
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="sessao-produtos" id="legumes">
+
+                <div class="titulo-sessao">
+
+                    <h2>Legumes</h2>
+
+                    <a href="#">Ver mais</a>
+
+                </div>
+
+                <div class="container-produtos">
+
+                    <article class="card-produto">
+
+                        <img src="images/cenoura.jpg" alt="Cenoura">
+
+                        <div class="informacoes-produto">
+
+                            <h3>Cenoura</h3>
+
+                            <p>
+                                Colheita recente de pequenos produtores.
+                            </p>
+
+                            <div class="preco-botao">
+
+                                <span>R$ 5,50</span>
+
+                                <button>
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="card-produto">
+
+                        <img src="images/tomate.jpg" alt="Tomate">
+
+                        <div class="informacoes-produto">
+
+                            <h3>Tomate</h3>
+
+                            <p>
+                                Produto fresco e selecionado.
+                            </p>
+
+                            <div class="preco-botao">
+
+                                <span>R$ 7,99</span>
+
+                                <button>
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="sessao-produtos" id="frutas">
+
+                <div class="titulo-sessao">
+
+                    <h2>Frutas</h2>
+
+                    <a href="#">Ver mais</a>
+
+                </div>
+
+                <div class="container-produtos">
+
+                    <article class="card-produto">
+
+                        <img src="images/morango.jpg" alt="Morango">
+
+                        <div class="informacoes-produto">
+
+                            <h3>Morango</h3>
+
+                            <p>
+                                Frutas frescas produzidas localmente.
+                            </p>
+
+                            <div class="preco-botao">
+
+                                <span>R$ 12,99</span>
+
+                                <button>
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="card-produto">
+
+                        <img src="images/banana.jpg" alt="Banana">
+
+                        <div class="informacoes-produto">
+
+                            <h3>Banana</h3>
+
+                            <p>
+                                Produção sustentável e selecionada.
+                            </p>
+
+                            <div class="preco-botao">
+
+                                <span>R$ 8,99</span>
+
+                                <button>
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="sessao-produtos" id="organicos">
+
+                <div class="titulo-sessao">
+
+                    <h2>Orgânicos</h2>
+
+                    <a href="#">Ver mais</a>
+
+                </div>
+
+                <div class="container-produtos">
+
+                    <article class="card-produto">
+
+                        <img src="images/organico1.jpg" alt="Orgânico">
+
+                        <div class="informacoes-produto">
+
+                            <h3>Kit orgânico</h3>
+
+                            <p>
+                                Seleção de produtos cultivados com mais cuidado.
+                            </p>
+
+                            <div class="preco-botao">
+
+                                <span>R$ 18,99</span>
+
+                                <button>
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="card-produto">
+
+                        <img src="images/organico2.jpg" alt="Orgânico">
+
+                        <div class="informacoes-produto">
+
+                            <h3>Verduras orgânicas</h3>
+
+                            <p>
+                                Produtos frescos e naturais.
+                            </p>
+
+                            <div class="preco-botao">
+
+                                <span>R$ 15,99</span>
+
+                                <button>
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
         </main>
+
         <footer>
+
+            <div class="nome-logo">
+
+                <h2>HortHome</h2>
+
+                <img src="images/logo_agronegocio.png" alt="Logo">
+
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li><a href="sobre.html" target="_blank">Sobre</a></li>
+                    <li><a href="produtores.html" target="_blank">Produtores</a></li>
+                    <li><a href="delivery.html" target="_blank">Delivery</a></li>
+                    <li><a href="comunidade.html" target="_blank">Comunidade</a></li>
+                    <li><a href="contato.html" target="_blank">Contato</a></li>
+                </ul>
+
+            </nav>
+
+            <div>
+
+                <h3>Nossas redes sociais</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="https://github.com/Ingrid-Almeida-developer/projeto_agronegocio">
+                            Github - Ingrid
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/guilhermearruda2812-cell">
+                            Github - Guilherme
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@queen_of_grau?_r=1&_t=ZS-96SHUBdVRQu">
+                            TikTok - Ingrid
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@guilherme_2010rru?_r=1&_t=ZS-96dTxHcnu9E">
+                            TikTok - Guilherme
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/ingrid.silvalmeida?igsh=MW1ta2N2cnI3eDg0Mw==">
+                            Instagram - Ingrid
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
             <p>© 2026 Hort Home. Todos os direitos reservados.</p>
+
         </footer>
+
     </body>
+
 </html>

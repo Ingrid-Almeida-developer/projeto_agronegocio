@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
+
         <meta charset="utf-8">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>HortHome</title>
+
         <link rel="stylesheet" href="style/global.css">
+
         <link rel="stylesheet" href="style/comunidade.css">
+
         <link rel="shortcut icon" href="images/logo_agronegocio.png" type="image/png">
+
     </head>
+
     <body>
+
         <header>
+
             <div class="container-barra">
+
                 <a href="#menu" class="link-barra botao-menu"></a>
+
                 <div id="menu">
+
                     <a href="#" class="sair"></a>
+
                     <nav>       
+
                         <ul>
                             <li><a href="sobre.html" target="_blank">Sobre</a></li>
                             <li><a href="produtores.html" target="_blank">Produtores</a></li>
@@ -22,64 +38,205 @@
                             <li><a href="comunidade.html" target="_blank">Comunidade</a></li>
                             <li><a href="contato.html" target="_blank">Contato</a></li>
                         </ul>
+
                     </nav>
+
                 </div>
+
                 <div class="link-cadastro">
-                    <a href="cadastro.html" class="link-barra" target="_blank">Entrar</a>
+
+                    <a href="cadastro.html" class="link-barra" target="_blank">
+                        Entrar
+                    </a>
+
                </div>
+
            </div>
+
        </header>
+
        <main>
+
            <section id="hero">
-               <h1>Comunidade HortHome</h1> 
-               <p>Um espaço para produtores compartilharem experiências, dúvidas e oportunidades dentro da rede.</p>
+
+               <div class="hero-conteudo">
+
+                   <h1>Comunidade HortHome</h1> 
+
+                   <p>
+                       Um espaço para produtores compartilharem experiências, dúvidas e oportunidades dentro da rede.
+                   </p>
+
+               </div>
+
            </section>
-           <section>
-               <article>
-                   <img src="./images/foto-de-perfil.jpg" alt="foto de perfil">
-                   <h2>Ingrid</h2>
-                   <p>Estou adorando começar o meu negócio com a HortHome.</p>
-                   <button class="like"></button>
+
+           <section class="feed-comunidade">
+
+               <article class="postagem">
+
+                   <div class="perfil-post">
+
+                       <img src="./images/foto-de-perfil.jpg" alt="foto de perfil">
+
+                       <div class="info-perfil">
+
+                           <h2>Ingrid</h2>
+
+                           <span>Produtora iniciante</span>
+
+                       </div>
+
+                   </div>
+
+                   <p class="texto-post">
+                       Estou adorando começar o meu negócio com a HortHome.
+                   </p>
+
+                   <button class="like">
+                       Curtir
+                   </button>
+
                    <form class="resposta">
-                       <label for="comment"><textarea type="text" id="comment" placeholder="Responda a este comentário..."></textarea></label>
-                       <button type="submit">Responder</button>
+
+                       <label for="comment1">
+
+                           <textarea
+                           id="comment1"
+                           placeholder="Responda a este comentário..."></textarea>
+
+                       </label>
+
+                       <button type="submit">
+                           Responder
+                       </button>
+
                    </form>
+
                </article>
-               <article>
-                   <img src="./images/foto-de-perfil.jpg" alt="foto de perfil">
-                   <h2>João</h2>
-                   <p>Alguém conhece cultivo hidropônico?</p>
-                   <button class="like"></button>
+
+               <article class="postagem">
+
+                   <div class="perfil-post">
+
+                       <img src="./images/foto-de-perfil.jpg" alt="foto de perfil">
+
+                       <div class="info-perfil">
+
+                           <h2>João</h2>
+
+                           <span>Interessado em hidroponia</span>
+
+                       </div>
+
+                   </div>
+
+                   <p class="texto-post">
+                       Alguém conhece cultivo hidropônico?
+                   </p>
+
+                   <button class="like">
+                       Curtir
+                   </button>
+
                    <form class="resposta">
-                       <label for="comment"><textarea type="text" id="comment" placeholder="Responda a este comentário..."></textarea></label>
-                       <button type="submit">Responder</button>
+
+                       <label for="comment2">
+
+                           <textarea
+                           id="comment2"
+                           placeholder="Responda a este comentário..."></textarea>
+
+                       </label>
+
+                       <button type="submit">
+                           Responder
+                       </button>
+
                    </form>
+
                </article>
-               <article>
-                   <img src="./images/foto-de-perfil.jpg" alt="foto de perfil">
-                   <h2>Guilherme</h2>
-                   <p>Alguém conhece uma boa forma de começar uma horta pequena?</p>
-                   <button class="like"></button>
+
+               <article class="postagem">
+
+                   <div class="perfil-post">
+
+                       <img src="./images/foto-de-perfil.jpg" alt="foto de perfil">
+
+                       <div class="info-perfil">
+
+                           <h2>Guilherme</h2>
+
+                           <span>Produtor iniciante</span>
+
+                       </div>
+
+                   </div>
+
+                   <p class="texto-post">
+                       Alguém conhece uma boa forma de começar uma horta pequena?
+                   </p>
+
+                   <button class="like">
+                       Curtir
+                   </button>
+
                    <form class="resposta">
-                       <label for="comment"><textarea type="text" id="comment" placeholder="Responda a este comentário..."></textarea></label>
-                       <button type="submit">Responder</button>
+
+                       <label for="comment3">
+
+                           <textarea
+                           id="comment3"
+                           placeholder="Responda a este comentário..."></textarea>
+
+                       </label>
+
+                       <button type="submit">
+                           Responder
+                       </button>
+
                    </form>
+
                </article>
+
            </section>
-           <section>
+
+           <section class="novo-comentario">
+
                <h2>Adicionar comentários</h2>
-               <form>
-                   <label for="comment"><textarea type="text" id="comment" placeholder="Compartilhe uma dúvida, ideia ou experiência..."></textarea></label>
-                   <button type="submit">Comentar</button>
+
+               <form class="form-comentario">
+
+                   <label for="comment-principal">
+
+                       <textarea
+                       id="comment-principal"
+                       placeholder="Compartilhe uma dúvida, ideia ou experiência..."></textarea>
+
+                   </label>
+
+                   <button type="submit">
+                       Comentar
+                   </button>
+
                </form>
+
            </section>
+
       </main>
+
       <footer>
+
           <div class="nome-logo">
+
               <h2>HortHome</h2>
+
               <img src="images/logo_agronegocio.png" alt="Logo">
+
           </div>
+
           <nav>       
+
               <ul>
                   <li><a href="sobre.html" target="_blank">Sobre</a></li>
                   <li><a href="produtores.html" target="_blank">Produtores</a></li>
@@ -87,18 +244,53 @@
                   <li><a href="comunidade.html" target="_blank">Comunidade</a></li>
                   <li><a href="contato.html" target="_blank">Contato</a></li>
               </ul>
+
           </nav>
+
           <div>
+
               <h3>Nossas redes sociais</h3>
+
               <ul>
-                  <li><a href="https://github.com/Ingrid-Almeida-developer/projeto_agronegocio">Github - Ingrid</a></li> 
-                  <li><a href="https://github.com/guilhermearruda2812-cell">Github - Guilherme</a></li>     
-                  <li><a href="https://www.tiktok.com/@queen_of_grau?_r=1&_t=ZS-96SHUBdVRQu">TikTok - Ingrid</a></li> 
-                  <li><a href="https://www.tiktok.com/@guilherme_2010rru?_r=1&_t=ZS-96dTxHcnu9E">TikTok - Guilherme</a></li> 
-                  <li><a href="https://www.instagram.com/ingrid.silvalmeida?igsh=MW1ta2N2cnI3eDg0Mw==">Instagram - Ingrid</a></li>
+
+                  <li>
+                      <a href="https://github.com/Ingrid-Almeida-developer/projeto_agronegocio">
+                          Github - Ingrid
+                      </a>
+                  </li> 
+
+                  <li>
+                      <a href="https://github.com/guilhermearruda2812-cell">
+                          Github - Guilherme
+                      </a>
+                  </li>     
+
+                  <li>
+                      <a href="https://www.tiktok.com/@queen_of_grau?_r=1&_t=ZS-96SHUBdVRQu">
+                          TikTok - Ingrid
+                      </a>
+                  </li> 
+
+                  <li>
+                      <a href="https://www.tiktok.com/@guilherme_2010rru?_r=1&_t=ZS-96dTxHcnu9E">
+                          TikTok - Guilherme
+                      </a>
+                  </li> 
+
+                  <li>
+                      <a href="https://www.instagram.com/ingrid.silvalmeida?igsh=MW1ta2N2cnI3eDg0Mw==">
+                          Instagram - Ingrid
+                      </a>
+                  </li>
+
               </ul>
+
           </div>
+
           <p>© 2026 Hort Home. Todos os direitos reservados.</p>
+
       </footer>
+
     </body>
-</html>>
+
+</html>
