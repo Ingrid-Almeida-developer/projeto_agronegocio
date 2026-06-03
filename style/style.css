@@ -95,8 +95,11 @@ main {
     0px 0px 25px rgba(0,0,0,0.3);
 }
 
+.secao {
+    max-width: 750px;
+}
+
 #sessao-apresentacao {
-    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -130,7 +133,6 @@ main {
 }
 
 #sessao-servicos {
-    width: 90%;
     margin: auto;
     background-color: var(--verde-secundario);
     padding: 50px;
@@ -170,7 +172,6 @@ main {
 }
 
 #sessao-impacto {
-    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -199,7 +200,6 @@ main {
 }
 
 #sessao-cadastro {
-    width: 90%;
     margin: auto;
     background-color: #6f9c73;
     padding: 50px;
