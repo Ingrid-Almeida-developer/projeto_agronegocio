@@ -52,9 +52,8 @@ a {
 }
 
 .botao-menu {
-    background-image: url("../images/botao-menu.png");
-    background-size: 100%;
-    background-position: center;
+    max-width: 80px;
+    max-width: 80px;
 }
 
 #menu {
@@ -67,7 +66,7 @@ a {
     top: 0;
     left: 0;
     background-color: var(--bege);
-    width: 40vw;
+    width: 700px;
     height: 100vh;
 }    
 
@@ -95,7 +94,6 @@ ul {
 }
 
 #menu li > a {
-    transition: 0.5s;
     width: 40vw;
     height: 7vh;
 }
