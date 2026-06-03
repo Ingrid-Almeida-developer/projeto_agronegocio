@@ -31,9 +31,9 @@ header {
     align-items: center;
     background-color: var(--verde-principal);
     width: 100vw;
-    height: 6vh; 
-    padding-left: 5px;
-    padding-right: 5px;
+    height: 95px; 
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a {
@@ -46,12 +46,15 @@ a {
 
 .link-barra {
     background-color: var(--verde-claro);
-    height: 4vh;
-    width: 10vw;
+    height: 80px;
+    width: 100px;
     border-radius: 2px;
 }
 
 .botao-menu {
+    background-image: url("../images/botao-menu.png");
+    background-size: cover;
+    background-position: center;
     max-width: 80px;
     max-width: 80px;
 }
@@ -66,7 +69,7 @@ a {
     top: 0;
     left: 0;
     background-color: var(--bege);
-    width: 700px;
+    max-width: 700px;
     height: 100vh;
 }    
 
