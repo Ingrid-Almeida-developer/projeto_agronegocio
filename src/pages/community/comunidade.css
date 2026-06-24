@@ -27,7 +27,7 @@ main {
     rgba(24, 58, 45, 0.75),
     rgba(24, 58, 45, 0.75)
     ),
-    url("../images/comunidade-banner.jpg");
+    url("/src/assets/images/img25.jpg");
     background-size: cover;
     background-position: center;
     min-height: 320px;

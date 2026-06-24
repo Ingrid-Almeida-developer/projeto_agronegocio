@@ -32,7 +32,7 @@
     rgba(24, 58, 45, 0.82),
     rgba(35, 70, 56, 0.82)
     ),
-    url("../images/sobre-hero.jpg");
+    url("/src/assets/images/img46.jpg");
     background-size: cover;
     background-position: center;
     color: white;

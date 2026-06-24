@@ -32,7 +32,7 @@ main {
     rgba(24, 58, 45, 0.82),
     rgba(24, 58, 45, 0.82)
     ),
-    url("../images/img34.jpg");
+    url("/src/assets/images/img34.jpg");
     background-size: cover;
     background-position: center;
     color: white;
