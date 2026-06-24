@@ -14,103 +14,34 @@
     --amarelo: #FBC02D;
 }
 
-p {
-    text-align: justify;
-}
-
 header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    width: 100px;
+    background-color: var(--bege);
+    position: fixed;
+    margin-right: 100px;
+    height: 100vh;
 }
 
-.container-barra {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--verde-principal);
-    width: 100vw;
-    height: 95px; 
-    padding-left: 10px;
-    padding-right: 10px;
+.container {
+    margin-left: 100px;
 }
 
-a {
+header a {
     text-decoration: none;
-    color: black;
+    color: var(--verde-principal);
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.link-barra {
-    background-color: var(--verde-claro);
-    height: 80px;
-    width: 100px;
-    border-radius: 2px;
-}
-
-.botao-menu {
-    background-image: url("../images/botao-menu.png");
-    background-size: cover;
-    background-position: center;
-    max-width: 80px;
-    max-width: 80px;
-}
-
-#menu {
-    display: none;
-}
-
-#menu:target {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--bege);
-    max-width: 700px;
-    height: 100vh;
-}    
-
-.sair {
-    display: block;
-    background-image: url("../images/botao-x.png");
-    background-size: cover;
-    background-position: center;
-    min-width: 60px;
-    min-height: 60px;
-    position: absolute;
-    right: 0;
-}
-
-#menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 50px;
 }
 
 ul {
     list-style-type: none;
-}
-
-#menu li > a {
-    width: 40vw;
-    height: 7vh;
-}
-
-.link-cadastro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.link-cadastro a {
-    min-width: 90px;
+    gap: 25px;
 }
 
 .nome-logo {
@@ -125,7 +56,7 @@ footer {
     color: white;
     padding-top: 10px;
     padding-left: 10px;
-    width: 100vw;
+    width: 100%;
 }
 
 footer h2 {
@@ -149,9 +80,9 @@ footer ul {
 footer a {
     justify-content: start;
     color: white;
+    text-decoration: none;
 }
 
 footer p {
     text-align: center;
 }
-
