@@ -26,7 +26,7 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    padding: 60px;
+    padding: 20px;
     background:
     linear-gradient(
     rgba(24, 58, 45, 0.82),
@@ -46,7 +46,7 @@ main {
 }
 
 #hero h1 {
-    font-size: 4rem;
+    font-size: 35px;
     color: var(--amarelo);
 }
 
@@ -96,7 +96,7 @@ main {
 }
 
 .secao {
-    max-width: 750px;
+    max-width: 600px;
 }
 
 #sessao-apresentacao {
@@ -105,7 +105,7 @@ main {
     align-items: center;
     gap: 40px;
     background-color: #cdb19a;
-    padding: 40px;
+    padding: 30px;
     border-radius: 30px;
 }
 
@@ -135,7 +135,7 @@ main {
 #sessao-servicos {
     margin: auto;
     background-color: var(--verde-secundario);
-    padding: 50px;
+    padding: 15px;
     border-radius: 30px;
     color: white;
 }
@@ -202,7 +202,7 @@ main {
 #sessao-cadastro {
     margin: auto;
     background-color: #6f9c73;
-    padding: 50px;
+    padding: 15px;
     border-radius: 30px;
     text-align: center;
 }

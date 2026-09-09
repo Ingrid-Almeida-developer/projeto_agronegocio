@@ -19,7 +19,7 @@ header {
     background-color: var(--bege);
     position: fixed;
     margin-right: 100px;
-    height: 100vh;
+    height: 100%;
 }
 
 .container {
